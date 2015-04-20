@@ -1,0 +1,554 @@
+/*hier onder staat alles wat standaart moet*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+body{
+	line-height: 1;
+}
+ol, ul{
+	list-style: none;
+}
+blockquote, q{
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content: '';
+	content: none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear{clear:both;}
+/* nu begint je eigen stuk css*/
+/*----------------------------------------------------------------------------------*/
+
+
+html, body {
+	height: 100%;
+	font-family: lato ,helvetica, verdana, sans-serif;
+	
+	text-align: center;
+	color: #262626;
+	background-color: #F6F9FA;
+	font-size: 18px;
+	line-height: 1.2em;
+}
+
+section {
+	display: block;
+	width: 100%;
+	padding: 5% 0;
+	box-shadow: 0px 20px 20px #888;
+}
+
+.header {
+	top: 0;
+	height: 15%;
+	padding-top: 2%;
+}
+
+h1 {
+	position: relative;
+	top: 20%;
+
+	font-family: impact;
+	font-size: 3em;
+	font-weight: bold;
+	display: block;
+}
+
+h2 {
+	font-family: impact;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 1%;
+}
+
+h3 {
+	margin: 4% 0 2% 0;
+	font-weight:bold;
+	font-size: 1.3em;
+}
+
+h4{
+	font-style: italic;
+}
+
+.dash {
+	height: 3px;
+	width: 40%;
+	left: 30%;
+	margin-bottom: 10%;
+	background-color: #262626;
+	position: relative;
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+
+.licht {
+	background-color: #FFF;
+}
+
+
+
+
+
+		/*INTRO*/
+#intro{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    z-index: 0;
+}
+
+.bottom {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url(../img/5fdp-1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    background: url(../img/5fdp-1.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+
+
+    -webkit-animation-name: introFadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-direction:alternate;
+
+    -moz-animation-name: introFadeInOut;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-duration: 7s;
+    -moz-animation-direction:alternate;
+
+    -o-animation-name: introFadeInOut;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+    -o-animation-duration: 7s;
+    -o-animation-direction:alternate;
+
+    animation-name: introFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-direction:alternate;
+}
+
+@-webkit-keyframes introFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes introFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes introFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes introFadeInOut {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ri {
+    max-width: 80%;
+    position: relative;
+    top: 25%;
+}
+
+
+
+
+
+				/*Biografie*/
+#bio {
+	background: #F6F9FA;
+	margin-top: 8%;
+}
+
+#leden {
+	padding: 3% 0;
+	font-family: 'Condiment', verdana;
+}
+
+.lid {
+	height: 30%;
+	width: 15%;
+	margin-right: 2%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+
+	display: inline-block;
+
+	font-weight: bold;
+	font: times;
+}
+
+#lid img {
+  margin-top: 2%;
+}
+
+#gijs {
+	padding:1%;
+	background:#FE3432 ;
+}
+
+#stonez {
+	padding:1%;
+	background:#669C41 ;
+}
+
+#roelof {
+	padding:1%;
+	background:#F75E0E ;
+}
+
+#erin {
+	padding:1%;
+	background:#3C5B9B ;
+}
+
+#smithers {
+	padding:1%;
+	background:#2DAAE1 ;
+}
+
+.profielFoto{ 
+	width: 100%;
+}
+
+
+
+
+
+/*Vids*/
+#vid{
+	background: #E5F4FF;
+}
+
+#vid-1{
+	padding: 2%;
+	background: #2DAAE1;
+}
+
+#vid-2{
+	padding: 2%;
+	background: #3C5B9B;
+}
+
+
+
+
+
+/*Pics*/
+#photo {
+	background: #FFFFE5;
+}
+
+.fotos{
+	display: inline-block;
+	width: 20%;
+	height: 150px;
+	margin: 1%;
+}
+
+#foto-1{
+ 	background: url(../img/fotos/live-1.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+#foto-2{
+	background: url(../img/fotos/live-2.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+#foto-3{
+ 	background: url(../img/fotos/live-3.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+#foto-4{
+ 	background: url(../img/fotos/live-4.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;	
+}
+#foto-5{
+ 	background: url(../img/fotos/live-5.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;	
+}
+#foto-6{
+ 	background: url(../img/fotos/live-6.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;	
+}
+#foto-7{
+ 	background: url(../img/fotos/live-7.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;	
+}
+#foto-8{
+ 	background: url(../img/fotos/live-8.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;	
+}
+
+
+
+
+/*Music*/
+#music {
+ 	background: url(../img/5fdp-2.jpg) no-repeat center center scroll;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+#dewplayer {
+	top: 50%;
+	left: 50%;
+	height: 215px;
+	width: 240px;
+	margin-top: 3%;
+}
+
+
+
+
+
+/*Gigs*/
+#gigs{
+	width:100%;
+	background: #FFFDFD;
+}
+
+.locatie{
+	width: 25%;
+	margin: 0 2%;
+	color: white;
+	display: inline-block;
+	box-shadow: 0px 20px 20px #888;
+
+}
+
+.locatie-foto{
+	width: 100%;
+	height: 100px;
+
+	display: block;
+}
+
+.locatie-info{
+	display: block;
+	position: relative;
+	margin: 2% 3%;	
+}
+
+.gig-beschrijving {
+	font-size: 14px;
+	padding: 4% 0;
+}
+
+#optreden-1 {
+	background: #669c41;
+}
+
+#l-f-1{
+	background: url(../img/locatie/waterpoort-sneek.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+#optreden-2{
+	background: #3C5B9B;
+}
+
+#l-f-2{
+	background: url(../img/locatie/sonisphere.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+#optreden-3{
+	background: #FE3432;
+}
+
+#l-f-3{
+	background: url(../img/locatie/bolwerk-sneek.jpg) no-repeat center center scroll;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+
+
+
+
+/*Contact*/
+#contact {
+	height: 100%;
+ 	padding: 5% 0 0 0;
+	color: white;
+	background: #1D3649;
+}
+
+#social-media-bar {
+	min-height: 50%;
+	max-height: inherit;
+	margin-top: 5%;
+	padding: 2%;
+}
+
+.sm-buttons {
+	margin: 0 1.5% 64px 1.5%;
+}
+
+#mail {
+	margin: 0 2%;
+}
+
+
+
+
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
